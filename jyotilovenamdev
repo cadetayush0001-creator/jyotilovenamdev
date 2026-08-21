@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>For Naamdev ❤️ From Jyoti</title>
+
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+rel="stylesheet">
+
+
+<style>
+
+/* ========================================
+   BASIC RESET
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#fff7f8;
+    color:#3a2028;
+    overflow-x:hidden;
+}
+
+
+/* ========================================
+   FLOATING HEARTS
+======================================== */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:#ef6b8a;
+    opacity:.25;
+    animation:floatHeart linear infinite;
+}
+
+.heart:nth-child(1){
+    left:5%;
+    font-size:20px;
+    animation-duration:12s;
+}
+
+.heart:nth-child(2){
+    left:18%;
+    font-size:30px;
+    animation-duration:16s;
+    animation-delay:2s;
+}
+
+.heart:nth-child(3){
+    left:35%;
+    font-size:18px;
+    animation-duration:13s;
+    animation-delay:4s;
+}
+
+.heart:nth-child(4){
+    left:55%;
+    font-size:28px;
+    animation-duration:17s;
+}
+
+.heart:nth-child(5){
+    left:72%;
+    font-size:21px;
+    animation-duration:14s;
+    animation-delay:3s;
+}
+
+.heart:nth-child(6){
+    left:88%;
+    font-size:34px;
+    animation-duration:18s;
+    animation-delay:5s;
+}
+
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:.3;
+    }
+
+    90%{
+        opacity:.2;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:55px 20px;
+
+    position:relative;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        #ffe0e8 0%,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        #ffd3df 0%,
+        transparent 35%
+    ),
+
+    #fff7f8;
+}
+
+
+.hero-content{
+
+    max-width:950px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+.small-text{
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    color:#b15a6e;
+
+    margin-bottom:25px;
+}
+
+
+.hero h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:clamp(
+        70px,
+        12vw,
+        145px
+    );
+
+    font-weight:400;
+
+    color:#bd365a;
+
+    line-height:.95;
+}
+
+
+.hero h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:clamp(
+        25px,
+        4vw,
+        42px
+    );
+
+    font-weight:500;
+
+    margin-top:20px;
+
+    color:#4a2731;
+}
+
+
+.hero h2 span{
+
+    color:#d84668;
+}
+
+
+.hero-description{
+
+    max-width:650px;
+
+    margin:30px auto;
+
+    line-height:1.9;
+
+    color:#795d65;
+
+    font-size:15px;
+}
+
+
+/* HERO PHOTO */
+
+.hero-photo{
+
+    width:min(
+        330px,
+        80vw
+    );
+
+    height:330px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:8px solid rgba(
+        255,
+        255,
+        255,
+        .9
+    );
+
+    box-shadow:
+        0 20px 60px
+        rgba(
+            100,
+            40,
+            55,
+            .18
+        );
+
+    margin:35px auto 10px;
+}
+
+
+/* BUTTON */
+
+.start-button{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#d94d70;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 12px 30px
+        rgba(
+            217,
+            77,
+            112,
+            .25
+        );
+
+    transition:.3s;
+}
+
+
+.start-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 17px 35px
+        rgba(
+            217,
+            77,
+            112,
+            .35
+        );
+}
+
+
+.scroll{
+
+    margin-top:35px;
+
+    color:#a47b85;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+}
+
+
+/* ========================================
+   COMMON SECTIONS
+======================================== */
+
+section{
+
+    position:relative;
+
+    z-index:2;
+
+    padding:100px 7%;
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    max-width:750px;
+
+    margin:
+        0 auto 55px;
+}
+
+
+.section-title .label{
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:11px;
+
+    color:#c64d6b;
+
+    font-weight:600;
+}
+
+
+.section-title h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    font-weight:600;
+
+    margin:12px 0;
+
+    color:#45242e;
+}
+
+
+.section-title p{
+
+    color:#80666d;
+
+    line-height:1.8;
+}
+
+
+/* ========================================
+   LOVE LETTER
+======================================== */
+
+.letter-section{
+
+    background:#fff;
+}
+
+
+.letter{
+
+    max-width:850px;
+
+    margin:auto;
+
+    background:#fffafa;
+
+    border:
+        1px solid
+        #f3dce2;
+
+    padding:55px;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(
+            95,
+            40,
+            55,
+            .08
+        );
+
+    position:relative;
+}
+
+
+.letter:before{
+
+    content:"❝";
+
+    position:absolute;
+
+    top:20px;
+
+    left:30px;
+
+    font-size:70px;
+
+    color:#f2b6c5;
+
+    font-family:Georgia,serif;
+}
+
+
+.letter-content{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#5d3d46;
+}
+
+
+.letter-content p{
+
+    margin-bottom:20px;
+}
+
+
+.signature{
+
+    text-align:right;
+
+    margin-top:35px;
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:42px;
+
+    color:#c84666;
+}
+
+
+/* ========================================
+   PHOTO STORY
+======================================== */
+
+.photo-story{
+
+    background:white;
+}
+
+
+.story-photo{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:30px;
+
+    align-items:center;
+}
+
+
+.story-photo img{
+
+    width:100%;
+
+    height:480px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(
+            95,
+            40,
+            55,
+            .12
+        );
+}
+
+
+.story-text{
+
+    padding:20px;
+}
+
+
+.story-text h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:38px;
+
+    color:#45242e;
+
+    margin-bottom:18px;
+}
+
+
+.story-text p{
+
+    color:#80666d;
+
+    line-height:1.9;
+
+    margin-bottom:16px;
+}
+
+
+/* ========================================
+   FEELINGS
+======================================== */
+
+.feelings{
+
+    background:#fff4f6;
+}
+
+
+.feeling-grid{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+
+.feeling-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border:
+        1px solid
+        #f5dfe5;
+
+    transition:.35s;
+}
+
+
+.feeling-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(
+            100,
+            40,
+            55,
+            .1
+        );
+}
+
+
+.feeling-icon{
+
+    font-size:38px;
+
+    margin-bottom:18px;
+}
+
+
+.feeling-card h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+
+.feeling-card p{
+
+    color:#80666d;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+
+/* ========================================
+   PROMISES
+======================================== */
+
+.promises{
+
+    background:white;
+}
+
+
+.promise-box{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+
+.promise{
+
+    padding:18px 20px;
+
+    margin:12px 0;
+
+    background:#fff7f8;
+
+    border-radius:15px;
+
+    color:#65454d;
+
+    font-size:14px;
+
+    border:
+        1px solid
+        #f3dfe4;
+}
+
+
+.promise span{
+
+    color:#d64e70;
+
+    margin-right:8px;
+}
+
+
+/* ========================================
+   MEMORIES
+======================================== */
+
+.memories{
+
+    background:#fff4f6;
+}
+
+
+.memory-grid{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:25px;
+}
+
+
+.memory{
+
+    background:white;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        #f3d5dd;
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            95,
+            40,
+            55,
+            .07
+        );
+
+    transition:.35s;
+}
+
+
+.memory:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+        0 20px 50px
+        rgba(
+            95,
+            40,
+            55,
+            .13
+        );
+}
+
+
+.memory img{
+
+    width:100%;
+
+    height:390px;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+
+.memory-caption{
+
+    padding:22px;
+
+    text-align:center;
+}
+
+
+.memory-caption h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:21px;
+
+    margin-bottom:8px;
+}
+
+
+.memory-caption p{
+
+    color:#80666d;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* ========================================
+   I LOVE YOU
+======================================== */
+
+.love-section{
+
+    min-height:75vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        #ffe0e8,
+        #fff7f8 65%
+    );
+}
+
+
+.love-content{
+
+    max-width:800px;
+}
+
+
+.love-heart{
+
+    font-size:80px;
+
+    animation:
+        heartbeat
+        1.5s infinite;
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.15);
+    }
+
+}
+
+
+.love-content h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:
+        clamp(
+            65px,
+            10vw,
+            120px
+        );
+
+    color:#c93e60;
+
+    font-weight:400;
+
+    margin:10px 0;
+}
+
+
+.love-content p{
+
+    max-width:600px;
+
+    margin:auto;
+
+    color:#735963;
+
+    line-height:1.9;
+}
+
+
+/* ========================================
+   FINAL SECTION
+======================================== */
+
+.final{
+
+    background:#4a2632;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+
+.final-photo{
+
+    width:min(
+        280px,
+        80vw
+    );
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:
+        5px solid
+        rgba(
+            255,
+            159,
+            180,
+            .55
+        );
+
+    margin:
+        0 auto 30px;
+
+    display:block;
+}
+
+
+.final h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+}
+
+
+.final p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#e6cbd2;
+
+    line-height:1.9;
+
+    font-size:15px;
+}
+
+
+.final-name{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:65px;
+
+    color:#ff9fb4;
+
+    margin-top:30px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer{
+
+    background:#351b24;
+
+    color:#bfa5ad;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media(max-width:800px){
+
+    section{
+
+        padding:
+            75px 5%;
+    }
+
+
+    .feeling-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .memory-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .story-photo{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .letter{
+
+        padding:
+            40px 25px;
+    }
+
+
+    .letter-content{
+
+        font-size:16px;
+    }
+
+
+    .section-title h2{
+
+        font-size:34px;
+    }
+
+
+    .final h2{
+
+        font-size:34px;
+    }
+
+
+    .memory img{
+
+        height:330px;
+    }
+
+
+    .story-photo img{
+
+        height:400px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================
+     FLOATING HEARTS
+======================================== -->
+
+<div class="hearts">
+
+    <div class="heart">♥</div>
+
+    <div class="heart">♥</div>
+
+    <div class="heart">♥</div>
+
+    <div class="heart">♥</div>
+
+    <div class="heart">♥</div>
+
+    <div class="heart">♥</div>
+
+</div>
+
+
+
+<!-- ========================================
+     HERO
+======================================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+
+<div class="small-text">
+
+A Little Surprise From Jyoti
+
+</div>
+
+
+<h1>
+
+Naamdev
+
+</h1>
+
+
+<h2>
+
+This little world is made
+
+<span>
+
+just for you ❤️
+
+</span>
+
+</h2>
+
+
+<p class="hero-description">
+
+Kuch feelings aisi hoti hain jo words mein kehna
+mushkil hota hai...
+
+<br>
+
+Isliye Jyoti ne apne dil ki kuch baatein
+ek chhoti si duniya mein likhi hain,
+
+<br>
+
+<strong>sirf aapke liye.</strong>
+
+</p>
+
+
+<!-- FIRST PHOTO -->
+
+<img
+class="hero-photo"
+src="memory-1.png"
+alt="Jyoti and Naamdev"
+>
+
+
+<br>
+
+
+<a
+href="#letter"
+class="start-button"
+>
+
+Open My Heart ❤️
+
+</a>
+
+
+<div class="scroll">
+
+↓ &nbsp; SCROLL DOWN &nbsp; ↓
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     LOVE LETTER
+======================================== -->
+
+<section
+class="letter-section"
+id="letter"
+>
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+From My Heart
+
+</div>
+
+
+<h2>
+
+Dear Naamdev...
+
+</h2>
+
+
+<p>
+
+Kuch baatein saamne kehna mushkil hota hai,
+isliye aaj dil khol kar keh rahi hoon.
+
+</p>
+
+
+</div>
+
+
+
+<div class="letter">
+
+
+<div class="letter-content">
+
+
+<p>
+
+Naamdev,
+
+</p>
+
+
+<p>
+
+Pata nahi main apni feelings ko words mein
+exactly kaise explain karun,
+
+lekin ek baat main dil se kehna chahti hoon —
+
+<strong>
+you mean so much to me.
+</strong>
+
+</p>
+
+
+<p>
+
+Meri life mein tumhara hona mere liye
+sirf ek relationship nahi hai.
+
+Tum meri khushi ho,
+meri smile ki wajah ho,
+
+aur meri zindagi ka woh beautiful part ho
+jise main kabhi khona nahi chahti.
+
+</p>
+
+
+<p>
+
+Tumhare saath bitaya hua har moment
+mere liye special hai.
+
+Kabhi tumhari ek chhoti si smile,
+kabhi tumhari care,
+kabhi tumhari baatein...
+
+Pata nahi kab ye sab meri life ka
+sabse beautiful part ban gaya.
+
+</p>
+
+
+<p>
+
+Shayad main har baar express nahi kar paati,
+
+lekin mere dil mein tumhare liye
+bahut saara pyaar hai. ❤️
+
+</p>
+
+
+<p>
+
+Thank you for being there.
+
+<br>
+
+Thank you for understanding me.
+
+<br>
+
+Thank you for making my life more beautiful.
+
+</p>
+
+
+<p
+style="
+text-align:center;
+font-size:27px;
+color:#c84666;
+"
+>
+
+I LOVE YOU, NAAMDEV. ❤️
+
+</p>
+
+
+</div>
+
+
+<div class="signature">
+
+Always Yours,
+
+<br>
+
+Jyoti ❤️
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     PHOTO STORY
+======================================== -->
+
+<section class="photo-story">
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+A Beautiful Moment
+
+</div>
+
+
+<h2>
+
+Just You & Me ❤️
+
+</h2>
+
+
+<p>
+
+Ek photo, hazaar feelings.
+
+</p>
+
+
+</div>
+
+
+
+<div class="story-photo">
+
+
+<img
+src="memory-1.png"
+alt="Jyoti and Naamdev together"
+>
+
+
+<div class="story-text">
+
+
+<h2>
+
+My Favourite Place Is With You
+
+</h2>
+
+
+<p>
+
+Duniya kitni bhi beautiful kyun na ho,
+
+tumhare saath bitaya hua ek simple sa
+moment mere liye usse bhi zyada special hota hai.
+
+</p>
+
+
+<p>
+
+Tumhare paas rehkar mujhe lagta hai
+ki main exactly wahi hoon
+jahan mujhe hona chahiye.
+
+</p>
+
+
+<p>
+
+Bas aise hi mera haath pakad kar
+mere saath rehna...
+
+baaki life hum saath mein figure out kar lenge. ❤️
+
+</p>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     FEELINGS
+======================================== -->
+
+<section class="feelings">
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+What You Mean To Me
+
+</div>
+
+
+<h2>
+
+You Are My...
+
+</h2>
+
+
+<p>
+
+Sirf husband nahi...
+
+meri life ke bahut saare
+beautiful roles ho tum.
+
+</p>
+
+
+</div>
+
+
+
+<div class="feeling-grid">
+
+
+<!-- CARD 1 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+❤️
+
+</div>
+
+<h3>
+
+My Love
+
+</h3>
+
+<p>
+
+Tumhare liye jo pyaar mere dil mein hai,
+
+use words mein completely explain karna
+shayad kabhi possible nahi hoga.
+
+</p>
+
+</div>
+
+
+
+<!-- CARD 2 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+🏠
+
+</div>
+
+<h3>
+
+My Home
+
+</h3>
+
+<p>
+
+Tumhare saath mujhe woh comfort aur
+sukoon milta hai jo kahin aur nahi milta.
+
+</p>
+
+</div>
+
+
+
+<!-- CARD 3 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+🤝
+
+</div>
+
+<h3>
+
+My Partner
+
+</h3>
+
+<p>
+
+Life ke har achhe aur difficult moment mein
+tumhare saath chalna chahti hoon.
+
+</p>
+
+</div>
+
+
+
+<!-- CARD 4 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+😊
+
+</div>
+
+<h3>
+
+My Happiness
+
+</h3>
+
+<p>
+
+Tumhari smile dekh kar meri smile
+automatically aa jaati hai.
+
+</p>
+
+</div>
+
+
+
+<!-- CARD 5 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+🫶
+
+</div>
+
+<h3>
+
+My Safe Place
+
+</h3>
+
+<p>
+
+Tumhare saamne main bina kisi hesitation ke
+bilkul apne aap ko express kar sakti hoon.
+
+</p>
+
+</div>
+
+
+
+<!-- CARD 6 -->
+
+<div class="feeling-card">
+
+<div class="feeling-icon">
+
+🌍
+
+</div>
+
+<h3>
+
+My Forever
+
+</h3>
+
+<p>
+
+Aaj bhi tum,
+kal bhi tum,
+
+aur meri har beautiful tomorrow
+mein bhi tum.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     PROMISES
+======================================== -->
+
+<section class="promises">
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+A Few Promises
+
+</div>
+
+
+<h2>
+
+For You, Always.
+
+</h2>
+
+
+</div>
+
+
+
+<div class="promise-box">
+
+
+<div class="promise">
+
+<span>♥</span>
+
+Main hamesha tumhari happiness ko
+important rakhungi.
+
+</div>
+
+
+<div class="promise">
+
+<span>♥</span>
+
+Life kitni bhi difficult ho,
+tumhara haath nahi chhodungi.
+
+</div>
+
+
+<div class="promise">
+
+<span>♥</span>
+
+Tumhare dreams ko apne dreams ki tarah
+support karungi.
+
+</div>
+
+
+<div class="promise">
+
+<span>♥</span>
+
+Har situation mein tumhare saath
+khadi rahungi.
+
+</div>
+
+
+<div class="promise">
+
+<span>♥</span>
+
+Aur sabse important...
+
+tumhe har din thoda aur pyaar karungi.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     MEMORIES 1 & 2
+======================================== -->
+
+<section class="memories">
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+Our Memories
+
+</div>
+
+
+<h2>
+
+Moments I Want To Keep Forever
+
+</h2>
+
+
+<p>
+
+Har photo apni ek kahani rakhti hai.
+
+</p>
+
+
+</div>
+
+
+
+<div class="memory-grid">
+
+
+<!-- PHOTO 1 -->
+
+<div class="memory">
+
+
+<img
+src="memory-1.png"
+alt="Jyoti and Naamdev beautiful moment"
+>
+
+
+<div class="memory-caption">
+
+
+<h3>
+
+Us, Together ❤️
+
+</h3>
+
+
+<p>
+
+Ek beautiful moment,
+ek beautiful memory —
+aur tum mere saath.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- PHOTO 2 -->
+
+<div class="memory">
+
+
+<img
+src="memory-2.png"
+alt="Holding hands"
+>
+
+
+<div class="memory-caption">
+
+
+<h3>
+
+I'll Always Hold Your Hand 🤝
+
+</h3>
+
+
+<p>
+
+Chahe life mein kuch bhi ho,
+tumhara haath mere haath mein rahe.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     MORE MEMORIES 3 & 4
+======================================== -->
+
+<section class="memories">
+
+
+<div class="section-title">
+
+
+<div class="label">
+
+More Beautiful Memories
+
+</div>
+
+
+<h2>
+
+More Moments, More Love ❤️
+
+</h2>
+
+
+<p>
+
+Har photo ke peeche ek feeling,
+aur har feeling ke peeche tum.
+
+</p>
+
+
+</div>
+
+
+
+<div class="memory-grid">
+
+
+<!-- PHOTO 3 -->
+
+<div class="memory">
+
+
+<img
+src="memory-3.png"
+alt="Jyoti and Naamdev together"
+>
+
+
+<div class="memory-caption">
+
+
+<h3>
+
+Beautiful Together ✨
+
+</h3>
+
+
+<p>
+
+Ek aur khoobsurat memory
+jo hamesha dil ke kareeb rahegi.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- PHOTO 4 -->
+
+<div class="memory">
+
+
+<img
+src="memory-4.png"
+alt="Jyoti and Naamdev smiling together"
+>
+
+
+<div class="memory-caption">
+
+
+<h3>
+
+Just Us ❤️
+
+</h3>
+
+
+<p>
+
+Saath ho tum,
+toh ordinary moments bhi
+special ban jaate hain.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     BIG I LOVE YOU
+======================================== -->
+
+<section class="love-section">
+
+
+<div class="love-content">
+
+
+<div class="love-heart">
+
+❤️
+
+</div>
+
+
+<h2>
+
+I Love You
+
+</h2>
+
+
+<p>
+
+Naamdev, duniya mein bahut saare words hain,
+
+lekin mere liye sabse beautiful
+three words hain —
+
+</p>
+
+
+<p
+style="
+font-weight:700;
+font-size:20px;
+margin-top:15px;
+color:#c84666;
+"
+>
+
+I &nbsp; LOVE &nbsp; YOU.
+
+</p>
+
+
+<p style="margin-top:20px;">
+
+Today. Tomorrow. Always. ❤️
+
+</p>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ========================================
+     FINAL MESSAGE
+======================================== -->
+
+<section class="final">
+
+
+<!-- FINAL PHOTO -->
+
+<img
+class="final-photo"
+src="memory-1.png"
+alt="Jyoti and Naamdev"
+>
+
+
+<h2>
+
+If I Had To Choose Again...
+
+</h2>
+
+
+<p>
+
+Toh main phir se tumhe hi choose karungi.
+
+<br>
+
+Phir se tumse hi pyaar karungi.
+
+<br>
+
+Phir se tumhare saath wohi beautiful
+journey start karungi.
+
+<br><br>
+
+
+Kyunki mere liye love ka matlab sirf
+"I Love You" kehna nahi hai...
+
+<br><br>
+
+
+Love ka matlab hai —
+
+<br>
+
+<strong>
+har din tumhe choose karna.
+</strong>
+
+</p>
+
+
+<div class="final-name">
+
+Yours Forever, Jyoti ❤️
+
+</div>
+
+
+</section>
+
+
+
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer>
+
+Made with ❤️ by Jyoti,
+specially for Naamdev.
+
+<br><br>
+
+Some feelings are too beautiful
+to stay unspoken.
+
+</footer>
+
+
+</body>
+
+</html>
